@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MyObservableComponent } from './my-observable/my-observable.component';
+import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
+import { MyCreationFunctionComponent } from './my-creation-function/my-creation-function.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'o', component: MyObservableComponent },
+  { path: 'cf', component: MyCreationFunctionComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'o' },
+  { path: '**', component: PathNotFoundComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
