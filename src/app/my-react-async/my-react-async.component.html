@@ -1,0 +1,16 @@
+<p style="padding-top: 20px;">MyHttpObservableComponent works!</p>
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+  {{errorMessage}}
+  <a href="https://blog.angular-university.io/rxjs-error-handling/">Comprehensive Error Handling.</a>
+</div>
+
+<div class="card">
+  <div class="card-header">Users</div>
+  <ul class="list-group" *ngIf="users$ | async as users">
+    <li class="list-group-item" *ngFor="let item of users">
+      #{{item.id}} {{item.first_name}} {{item.last_name}}
+    </li>
+  </ul>
+</div>
+
