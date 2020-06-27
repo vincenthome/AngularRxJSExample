@@ -5,6 +5,8 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
 import { MyCreationFunctionComponent } from './my-creation-function/my-creation-function.component';
 import { MyOperatorComponent } from './my-operator/my-operator.component';
 import { MyDeclarativeReactAsyncComponent } from './my-declarative-react-async/my-declarative-react-async.component';
+import { MyMapComponent } from './my-map/my-map.component';
+import { MyCombineComponent } from './my-combine/my-combine.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,9 @@ const routes: Routes = [
   { path: 'cf', component: MyCreationFunctionComponent },
   { path: 'op', component: MyOperatorComponent },
   { path: 'dra', component: MyDeclarativeReactAsyncComponent },
+  { path: 'map', component: MyMapComponent },
+  { path: 'combine', component: MyCombineComponent },
+
   { path: '', pathMatch: 'full', redirectTo: 'o' },
   { path: '**', component: PathNotFoundComponent }
 ];

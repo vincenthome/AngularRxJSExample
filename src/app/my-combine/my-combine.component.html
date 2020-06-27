@@ -1,0 +1,47 @@
+<h3>Combine Post and User</h3>
+<p>MyCombineComponent works!</p>
+
+<a href="https://rxjs.dev/api/index/function/combineLatest">combineLatest</a>
+<ul>
+  <li>Function: </li>
+  <li>1. When all Input Streams emitted at least once</li>
+  <li>2. Returns LATEST emitted of ALL Input Streams into an Observable Array</li>
+  <li>Use case: Re-evaluate state when an Action occurs</li>
+</ul>
+
+<a href="https://rxjs.dev/api/index/function/forkJoin">forkJoin</a>
+<ul>
+  <li>Function: </li>
+  <li>1. When all Input Streams Completed</li>
+  <li>2. Returns the LAST emitted from ALL COMPLETE Input Streams into an Observable Array and Completes</li>
+  <li>Use case: Wait until ALL http request Input Streams Complete and combine all results</li>
+</ul>
+
+<a href="https://rxjs.dev/api/operators/withLatestFrom">withLatestFrom</a>
+<ul>
+  <li>Operator: </li>
+  <li>1. When all Input streams emitted at least once</li>
+  <li>2. Only when Source stream emitted</li>
+  <li>3. Returns LATEST emitted of ALL Input Streams into an Observable Array</li>
+  <li>4. Output Stream Completes when ALL Input Streams Complete</li>
+  <li>Use case: Use 1 Input Stream to 'Regulate' the Output Stream </li>
+</ul>
+
+<div *ngIf="posts$ | async as posts">
+  <div class="card" *ngFor="let post of posts">
+    <div class="card-body">
+      <h5 class="card-title">
+        {{post.title}}
+      </h5>
+      <h6>
+        #{{post.id}}
+        - UserId: {{post.userId}}
+          - <span style="color: red;"> Username: {{post.username}}</span>
+      </h6>
+      <div class="card-text">
+        {{post.body}}
+      </div>
+    </div>
+  </div>
+</div>
+

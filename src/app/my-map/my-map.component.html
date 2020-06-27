@@ -1,0 +1,19 @@
+<p>MyMapComponent works!</p>
+
+<div *ngIf="posts$ | async as posts">
+  <div class="card" *ngFor="let item of posts">
+    <div class="card-body">
+      <h5 class="card-title" style="color: red;">
+        {{item.title}}
+      </h5>
+      <h6>
+        #{{item.id}}
+        - <span style="color: red;">UserId: {{item.userId}}</span>
+      </h6>
+      <div class="card-text">
+        {{item.body}}
+      </div>
+    </div>
+  </div>
+</div>
+
