@@ -8,7 +8,7 @@ import { MyObservableComponent } from './my-observable/my-observable.component';
 import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
 import { MyCreationFunctionComponent } from './my-creation-function/my-creation-function.component';
 import { MyOperatorComponent } from './my-operator/my-operator.component';
-import { MyReactAsyncComponent } from './my-react-async/my-react-async.component';
+import { MyDeclarativeReactAsyncComponent } from './my-declarative-react-async/my-declarative-react-async.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { MyReactAsyncComponent } from './my-react-async/my-react-async.component
     PathNotFoundComponent,
     MyCreationFunctionComponent,
     MyOperatorComponent,
-    MyReactAsyncComponent
+    MyDeclarativeReactAsyncComponent
   ],
   imports: [
     BrowserModule,
