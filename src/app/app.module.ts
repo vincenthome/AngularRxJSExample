@@ -15,6 +15,7 @@ import { MyActionComponent } from './my-action/my-action.component';
 import { MyActionMasterComponent } from './my-action-master-detail/components/my-action-master/my-action-master.component';
 import { MyActionDetailComponent } from './my-action-master-detail/components/my-action-detail/my-action-detail.component';
 import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
+import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MyActionMasterDetailComponent } from './my-action-master-detail/my-acti
     MyActionComponent,
     MyActionMasterComponent,
     MyActionDetailComponent,
-    MyActionMasterDetailComponent
+    MyActionMasterDetailComponent,
+    MyErrorSubjectComponent
   ],
   imports: [
     BrowserModule,

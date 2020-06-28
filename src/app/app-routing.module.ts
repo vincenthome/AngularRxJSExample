@@ -9,6 +9,7 @@ import { MyMapComponent } from './my-map/my-map.component';
 import { MyCombineComponent } from './my-combine/my-combine.component';
 import { MyActionComponent } from './my-action/my-action.component';
 import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
+import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'combine', component: MyCombineComponent },
   { path: 'action', component: MyActionComponent },
   { path: 'masterdetail', component: MyActionMasterDetailComponent },
+  { path: 'error', component: MyErrorSubjectComponent },
 
   { path: '', pathMatch: 'full', redirectTo: 'o' },
   { path: '**', component: PathNotFoundComponent }

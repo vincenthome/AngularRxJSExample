@@ -1,0 +1,8 @@
+<p>MyErrorSubjectComponent works!</p>
+
+<div *ngIf="errorMessage$ | async as errorMessage" class="alert alert-danger">
+  {{errorMessage}}
+  <a href="https://blog.angular-university.io/rxjs-error-handling/">Comprehensive Error Handling.</a>
+</div>
+
+<div *ngIf="response$ | async"></div>
