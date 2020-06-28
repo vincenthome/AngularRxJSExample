@@ -8,6 +8,7 @@ import { MyDeclarativeReactAsyncComponent } from './my-declarative-react-async/m
 import { MyMapComponent } from './my-map/my-map.component';
 import { MyCombineComponent } from './my-combine/my-combine.component';
 import { MyActionComponent } from './my-action/my-action.component';
+import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'map', component: MyMapComponent },
   { path: 'combine', component: MyCombineComponent },
   { path: 'action', component: MyActionComponent },
+  { path: 'masterdetail', component: MyActionMasterDetailComponent },
 
   { path: '', pathMatch: 'full', redirectTo: 'o' },
   { path: '**', component: PathNotFoundComponent }

@@ -1,0 +1,12 @@
+<p>MyActionDetailComponent works!</p>
+
+<div *ngIf="user$ | async as user">
+  <div>
+    # {{user.id}} ({{user.username}})
+  </div>
+  <div>
+    {{user.name}}
+  </div>
+  <div>{{user.email}}</div>
+  <div>{{user.phone}}</div>
+</div>

@@ -12,6 +12,9 @@ import { MyDeclarativeReactAsyncComponent } from './my-declarative-react-async/m
 import { MyMapComponent } from './my-map/my-map.component';
 import { MyCombineComponent } from './my-combine/my-combine.component';
 import { MyActionComponent } from './my-action/my-action.component';
+import { MyActionMasterComponent } from './my-action-master-detail/components/my-action-master/my-action-master.component';
+import { MyActionDetailComponent } from './my-action-master-detail/components/my-action-detail/my-action-detail.component';
+import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { MyActionComponent } from './my-action/my-action.component';
     MyDeclarativeReactAsyncComponent,
     MyMapComponent,
     MyCombineComponent,
-    MyActionComponent
+    MyActionComponent,
+    MyActionMasterComponent,
+    MyActionDetailComponent,
+    MyActionMasterDetailComponent
   ],
   imports: [
     BrowserModule,
