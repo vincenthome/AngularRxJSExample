@@ -7,6 +7,7 @@ import { MyOperatorComponent } from './my-operator/my-operator.component';
 import { MyDeclarativeReactAsyncComponent } from './my-declarative-react-async/my-declarative-react-async.component';
 import { MyMapComponent } from './my-map/my-map.component';
 import { MyCombineComponent } from './my-combine/my-combine.component';
+import { MyActionComponent } from './my-action/my-action.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'dra', component: MyDeclarativeReactAsyncComponent },
   { path: 'map', component: MyMapComponent },
   { path: 'combine', component: MyCombineComponent },
+  { path: 'action', component: MyActionComponent },
 
   { path: '', pathMatch: 'full', redirectTo: 'o' },
   { path: '**', component: PathNotFoundComponent }
