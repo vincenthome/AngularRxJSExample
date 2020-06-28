@@ -10,12 +10,10 @@ import { catchError } from 'rxjs/operators';
 })
 export class MyCombineComponent implements OnInit {
 
-  errMessage: string;
-
   posts$ = this.dal.postsWithUser$
   .pipe(
     catchError(err => {
-      this.errMessage = err;
+      console.log(err);
       return EMPTY;
     })
   );

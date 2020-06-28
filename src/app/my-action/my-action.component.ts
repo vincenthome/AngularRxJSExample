@@ -10,8 +10,6 @@ import { EMPTY, BehaviorSubject, combineLatest } from 'rxjs';
 })
 export class MyActionComponent implements OnInit {
 
-  errMessage: string;
-
   private selectedUserSubject = new BehaviorSubject<number>(0);
   selectedUserAction$ = this.selectedUserSubject.asObservable();
 
@@ -21,7 +19,7 @@ export class MyActionComponent implements OnInit {
         posts.filter(post =>
           selectedUserId ? post.userId === selectedUserId : true)),
       catchError(err => {
-        this.errMessage = err;
+        console.log(err);
         return EMPTY;
       })
     );
@@ -29,7 +27,7 @@ export class MyActionComponent implements OnInit {
   users$ = this.dal.users$
       .pipe(
         catchError(err => {
-          this.errMessage = err;
+          console.log(err);
           return EMPTY;
         })
       );

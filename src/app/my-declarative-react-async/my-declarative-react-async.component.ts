@@ -11,10 +11,9 @@ import { DalService } from '../services/dal.service';
 })
 export class MyDeclarativeReactAsyncComponent {
 
-  errorMessage: string;
   users$ = this.dalService.users$.pipe(
     catchError(err => {
-      this.errorMessage = err;
+      console.log(err);
       return EMPTY;
     })
   );

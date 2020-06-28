@@ -10,11 +10,10 @@ import { EMPTY } from 'rxjs';
 })
 export class MyMapComponent implements OnInit {
 
-  errMessage: string;
   posts$ = this.dal.posts$
     .pipe(
       catchError(err => {
-        this.errMessage = err;
+        console.log(err);
         return EMPTY;
       })
     );
