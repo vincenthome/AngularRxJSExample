@@ -9,7 +9,7 @@ import { map, catchError, tap } from 'rxjs/operators';
 })
 export class MyActionMasterDetailDalService {
 
-  private rootUrl = 'https://jsonplaceholder.typicode1.com';
+  private rootUrl = 'https://jsonplaceholder.typicode.com';
   private getUsersUrl = `${this.rootUrl}/users`;
 
   users$ = this.httpClient.get<User[]>(`${this.getUsersUrl}`)
