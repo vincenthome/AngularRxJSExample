@@ -8,7 +8,7 @@ import { catchError, tap } from 'rxjs/operators';
 })
 export class MyErrorSubjectDalService {
 
-  response$ = this.httpClient.get('https://throwerrornow.com')
+  response$ = this.httpClient.get('https://api.github.com/404-not-found')
     .pipe(
       tap(resp => resp),
       catchError(this.handleError)
