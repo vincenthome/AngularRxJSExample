@@ -1,0 +1,28 @@
+<p>MyAddSubjectMergeScanComponent works!</p>
+
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col col-sm-10">Users</div>
+      <div class="col col-sm-2"><button class="btn btn-primary" (click)="addUser()">Add</button></div>
+    </div>
+    <div class="row">
+      <div class="col col-sm-4">
+        <ul class="list-group" *ngIf="users$ | async as users">
+          <li class="list-group-item" *ngFor="let user of users" >
+            {{user.username}} (#{{user.id}})
+          </li>
+        </ul>
+      </div>
+      <div class="col col-sm-8">
+        <form>
+          <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="" [(ngModel)]="username">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

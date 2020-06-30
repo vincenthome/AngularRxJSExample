@@ -16,6 +16,7 @@ import { MyActionMasterComponent } from './my-action-master-detail/components/my
 import { MyActionDetailComponent } from './my-action-master-detail/components/my-action-detail/my-action-detail.component';
 import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
 import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.component';
+import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-add-subject-merge-scan.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.com
     MyActionMasterComponent,
     MyActionDetailComponent,
     MyActionMasterDetailComponent,
-    MyErrorSubjectComponent
+    MyErrorSubjectComponent,
+    MyAddSubjectMergeScanComponent
   ],
   imports: [
     BrowserModule,
