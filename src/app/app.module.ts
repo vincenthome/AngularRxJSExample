@@ -17,6 +17,8 @@ import { MyActionDetailComponent } from './my-action-master-detail/components/my
 import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
 import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.component';
 import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-add-subject-merge-scan.component';
+import { MySeqHighorderobservableComponent } from './my-seq-highorderobservable/my-seq-highorderobservable.component';
+import { MyParallelHighorderobservableComponent } from './my-parallel-highorderobservable/my-parallel-highorderobservable.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-a
     MyActionDetailComponent,
     MyActionMasterDetailComponent,
     MyErrorSubjectComponent,
-    MyAddSubjectMergeScanComponent
+    MyAddSubjectMergeScanComponent,
+    MySeqHighorderobservableComponent,
+    MyParallelHighorderobservableComponent
   ],
   imports: [
     BrowserModule,

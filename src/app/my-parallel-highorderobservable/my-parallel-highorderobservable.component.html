@@ -1,0 +1,20 @@
+<p>MyParallelHighorderobservableComponent works!</p>
+
+<div *ngIf="unknownResource$ | async as unknownResource" >
+  <div class="card">
+    <h5 class="card-title" style="color: red;">
+      #{{unknownResource.id}} - {{unknownResource.name}}
+    </h5>
+    <h6>
+      <span style="color: red;">Year: {{unknownResource.year}}</span>
+    </h6>
+    <div class="card-text">
+      <div>
+        Color: {{unknownResource.color}}
+      </div>
+      <div>
+        Pantone:  {{unknownResource.pantone_value}}
+      </div>
+    </div>
+  </div>
+</div>

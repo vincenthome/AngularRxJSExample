@@ -11,6 +11,9 @@ import { MyActionComponent } from './my-action/my-action.component';
 import { MyActionMasterDetailComponent } from './my-action-master-detail/my-action-master-detail.component';
 import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.component';
 import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-add-subject-merge-scan.component';
+import { MySeqHighorderobservableDalService } from './my-seq-highorderobservable/my-seq-highorderobservable-dal.service';
+import { MySeqHighorderobservableComponent } from './my-seq-highorderobservable/my-seq-highorderobservable.component';
+import { MyParallelHighorderobservableComponent } from './my-parallel-highorderobservable/my-parallel-highorderobservable.component';
 
 
 const routes: Routes = [
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'action', component: MyActionComponent },
   { path: 'masterdetail', component: MyActionMasterDetailComponent },
   { path: 'add', component: MyAddSubjectMergeScanComponent },
+  { path: 'seq', component: MySeqHighorderobservableComponent },
+  { path: 'parallel', component: MyParallelHighorderobservableComponent },
+
 
   { path: 'error', component: MyErrorSubjectComponent },
 
