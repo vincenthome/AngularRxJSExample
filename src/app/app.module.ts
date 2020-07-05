@@ -19,6 +19,7 @@ import { MyErrorSubjectComponent } from './my-error-subject/my-error-subject.com
 import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-add-subject-merge-scan.component';
 import { MySeqHighorderobservableComponent } from './my-seq-highorderobservable/my-seq-highorderobservable.component';
 import { MyParallelHighorderobservableComponent } from './my-parallel-highorderobservable/my-parallel-highorderobservable.component';
+import { MyLastonewinHighorderobservableComponent } from './my-lastonewin-highorderobservable/my-lastonewin-highorderobservable.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MyParallelHighorderobservableComponent } from './my-parallel-highordero
     MyErrorSubjectComponent,
     MyAddSubjectMergeScanComponent,
     MySeqHighorderobservableComponent,
-    MyParallelHighorderobservableComponent
+    MyParallelHighorderobservableComponent,
+    MyLastonewinHighorderobservableComponent
   ],
   imports: [
     BrowserModule,

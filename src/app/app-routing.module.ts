@@ -14,6 +14,7 @@ import { MyAddSubjectMergeScanComponent } from './my-add-subject-merge-scan/my-a
 import { MySeqHighorderobservableDalService } from './my-seq-highorderobservable/my-seq-highorderobservable-dal.service';
 import { MySeqHighorderobservableComponent } from './my-seq-highorderobservable/my-seq-highorderobservable.component';
 import { MyParallelHighorderobservableComponent } from './my-parallel-highorderobservable/my-parallel-highorderobservable.component';
+import { MyLastonewinHighorderobservableComponent } from './my-lastonewin-highorderobservable/my-lastonewin-highorderobservable.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'add', component: MyAddSubjectMergeScanComponent },
   { path: 'seq', component: MySeqHighorderobservableComponent },
   { path: 'parallel', component: MyParallelHighorderobservableComponent },
+  { path: 'lastonewin', component: MyLastonewinHighorderobservableComponent },
 
 
   { path: 'error', component: MyErrorSubjectComponent },
